@@ -1,0 +1,7 @@
+Select abg (amount)from payments;
+Select * from payments where paymentDate between date ‘2003/11/18’ and date ‘2004/11/18’;
+Select a.firstName,a.lastName,a.email,a.officeCode,a.jobTitle,b.country,b.territory from employees a join offices b on a.officeCode = b.officeCode where a.ofifceCode=’1’;
+Show databeses;
+show tables;
+Select * From customer;
+Select a.officeCode,b.city,count(*) from employees a inner join offices b on a.officeCode = b.officeCode group by a.officeCode
